@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        head is basically used for storing meta information.
+        <title>
+            webpage title is here
+        </title>
+        <style>
+            /* in this style tag we will provide styles for our divs using "class" 
+            and "id" */
+            
+            h1{
+                color: blueviolet;  /* simple selector */
+            }
+            p {
+                background-color: rgb(20, 223, 64);
+            }
+            /* accessing through id's */
+            #unique {
+                text-decoration: underline;
+            }
+            /* accessing the classes */
+            .common > p {
+                background-color: blanchedalmond;
+            }
+            /* ">" this in the combinator selector is used for finding immediate tags */
+            .common2 p{
+                color: rgb(102, 70, 87);
+            }
+            .common + div {
+                color: cyan;
+            }
+            div {
+                background-color: magenta;
+            }
+            /* attribute selectors */
+            label[for]{
+                background-color: yellowgreen;
+            }
+            label[for="name"]{
+                color: tomato;
+            }
+            input[type]{
+                background-color: skyblue;
+            }
+        </style>
+    </head>
+    <body>
+
+
+        <div class="common">
+            this div class is used understanding p tag 
+            <div>
+                <p>
+                    Hey there buddy, seeing my webpage huh!
+                </p>
+            </div>
+            <div></div>
+            <p> this p tag is so deep down that for accessing it you 
+                have to use a combinator selector
+            </p>
+        </div>
+        <div class="sib">I am immediate Sibling </div>
+        <div class="common2"> This is the third div class</div>
+        <h1>
+            heading tag
+        </h1>
+        <h2>
+            heading tag 2
+        </h2>
+        <h3>
+            heading tag 3
+        </h3>
+        
+        <p>
+            paragraph tag, can be used for adding description and all
+        </p>
+        <!-- anchor tag -->
+        <a href="google.com">  href-> hyperlink refference
+            It is a hyperlink
+        </a>
+        <div>
+            div denotes division
+        </div>
+        Content of the webpage is inside body
+        <ul>
+            Unordered Lists
+            <li>
+                list item is inside "li" tag
+            </li>
+        </ul>
+        <ol>
+            Ordered lists are here with "ol" tag
+        </ol>
+        <span>
+            span is also a content filling tag
+        </span>
+        <!-- image tag -->
+        <img width="200" src="image.jpg" alt="Some image">
+        suppose image is not being loaded in given time then the text inside "alt" 
+        attribute will be displayed
+        <!-- all the stuff inside the form will be inline -->
+        <form>
+            <label for="name">Name</label> <!-- "id" tag is used for uniqely identifying
+            the element and it also helps to connect with the label tag so.-->
+            <input type="text" id="name">
+
+            <label for="email">Email </label>
+            
+            <input type="email" id="email">
+            <label for="ph">Phone Number</label>
+            <input type="number" id="ph">
+
+        </form>
+        we can also provide id's to our div tags.
+        and they has to be unique.
+        <div id="unique">
+            Josh technology Sucks!!!
+        </div>
+
+        id's should be unique, suppose if we want to have same name then use "class"
+        
+        
+    </body>
+
+</html>
