@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one {
+          background-color: rgb(34, 324,56);
+        }
+        .two {
+            background-color: rgb(20, 231, 214);
+            /* we can override any block or inline element 
+            by separately providing the display property */
+        }
+        .three {
+            background-color: tomato;
+            height: 5rem;
+            width: 10rem;
+            /* here height and width have no significance */
+        }
+        .four {
+            background-color: violet;
+            display: inline-block; /* by this the height and width will have significance */
+            height: 5rem;
+            width: 30rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="one"> I am a block line element</div>
+    <span class="two"> I am an inline element </span>
+    <span class="three"> Another inline element</span>
+    <SPAN class="four"> INLINE block element</SPAN>
+    <div class="one">block line element</div>
+</body>
+</html>
