@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Doc</title>
+</head>
+<body>
+	<button>Say Hello</button>
+	<script type="">
+		// on pressing the button it should print "hello"
+		let btn=document.querySelector("button");
+		btn.addEventListener("click",function(e){
+			let dive = document.createElement("div");
+			dive.innerText="Hello!";
+			let body=document.querySelector("body");
+			body.appendChild(dive);
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+#container{
+	height:  70vh;
+	width: 70vw;
+	background-color: lightgrey;
+	display: flex;
+	justify-content: flex-start;
+	/*flex-direction: column;*/
+
+	/*flex-wrap: wrap;  flex wrap helps in wrapping in multiple lines*/
+	/*but by default it tries to wrap in a single line */
+	/*the default property of flex is be in horizontal direction
+	but we can change the property to vertical using flex direction */
+	
+	/*after adding in the column fashion we can see that they don't acquire 
+	extra space they remain in the container*/
+
+	justify-content:  -> center;
+	                  -> flex-left;
+	                  -> space-between -> put spaces between the boxes;
+	                  -> space -around -> space on both left and right of the align-items
+	                  -> space evenly-> space around the item in 4 directions
+	align-content: ;
+	align-items: ;
+}
+#container div{
+	height: 7rem;
+	width: 7rem;
+}
+#div1{
+	background-color: darkred;
+	/*order: 1;*/
+	/*border-radius: 50%;*/
+	/*the default value of order is 0 so the appearence of the divs will
+	be in default order but when we define the order then */
+}
+#div2{
+	background-color: darkcyan;
+	
+	/*flex-grow is used for dividing the boxes in equal ratio*/
+	/*border-radius: 50%;*/
+}
+#div3{
+	background-color: green;
+	/*border-radius: 50%;*/
+}
+#div4{
+	background-color: yellow;
+	
+}
