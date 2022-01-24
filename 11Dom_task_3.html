@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dom task 3</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+
+			margin-top: 5rem;
+		}
+		.red{
+			background-color: red;
+			box-shadow: 0px 0px 6px 5px;
+		}
+		.green{
+			background-color: green;
+			box-shadow: 0px 0px 6px 5px;
+		}
+		.yellow{
+			background-color: yellow;
+			box-shadow: 0px 0px 6px 5px;
+		}
+		.blue{
+			background-color: blue;
+			box-shadow: 0px 0px 6px 5px;
+		}
+		.orange{
+			background-color: orange;
+			box-shadow: 0px 0px 6px 5px;
+		}
+		.card{
+			height: 10rem;
+			width: 10rem;
+			border: 1px solid black;
+			margin: 2rem;
+		}
+	</style>
+</head>
+<body>
+	<div class="card" data-color="red"></div>
+	<div class="card" data-color="blue"></div>
+	<div class="card" data-color="green"></div>
+	<div class="card" data-color="yellow"></div>
+	<div class="card" data-color="orange"></div>
+	<div class="card" data-color="red"></div>
+	<div class="card" data-color="blue"></div>
+	<div class="card" data-color="green"></div>
+	<div class="card" data-color="yellow"></div>
+	<div class="card" data-color="orange"></div>
+	<script type="text/javascript">
+		// task-> write a acript which fetches the data-color attribute of the card on double clicking on them and attaches the fetched class to that card. Also changes the data-color attribute to "used"
+		let allcards=document.querySelectorAll(".card"); // if we write "." then it will search according to the class
+
+		allcards.forEach((card)=>{
+			card.addEventListener("dblclick",(e)=>{
+				let dataColor=card.getAttribute("data-color");
+				card.classList.add(dataColor);
+				card.setAttribute("data-color","used");
+			})
+		})
+	</script>
+</body>
+</html>

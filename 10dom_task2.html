@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dom task 2</title>
+</head>
+<body>
+	<ul>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+		<li>6</li>
+		<li>8</li>
+		<li>9</li>
+		<li>10</li>
+	</ul>
+	<script type="text/javascript">
+		// the task is to print the missing element in the list above
+		// firstly let's select the parent 
+		let ul = document.querySelector("ul");
+		//  since element 7 is missing so let's use query selector all for
+		//  selecting the missing eleemnts
+		let allLiEle = document.querySelectorAll("li");
+		//  we need refference of eight element for executing the insert before
+		//  property
+		let eight=allLiEle[6];
+		let sevenele=document.createElement("li");
+		sevenele.innerText="7";
+		ul.insertBefore(sevenele,eight);
+	</script>
+</body>
+</html>
