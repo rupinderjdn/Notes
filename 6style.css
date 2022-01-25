@@ -28,6 +28,7 @@
 }
 #div1{
 	background-color: darkred;
+	flex-grow: 1;
 	/*order: 1;*/
 	/*border-radius: 50%;*/
 	/*the default value of order is 0 so the appearence of the divs will
