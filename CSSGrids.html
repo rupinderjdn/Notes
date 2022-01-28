@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grids</title>
+    <style>
+        .wrapper{
+            display: grid;
+            grid-template-columns: 70% 30%;
+            /* used for dividing the columns */
+            /* grid-template-columns: 40% 30% 30%; */
+            /* the upper statement will add three sections in the main width */
+            /* Also we don't have to manually set margin, we can use grid-column-gap
+            for that */
+            /* grid-column-gap: 1em ;
+            grid-row-gap: 1em; */
+            grid-gap: 1em;
+        }
+        .wrapper >div{
+            background-color: #eee;
+            padding: 1em;
+        }
+        .wrapper >div:nth-child(odd){
+            background-color: #ddd;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, voluptatem tempora beatae doloribus at voluptatibus? Quas, nihil provident, ipsam eius in accusantium minus illo earum quam similique praesentium accusamus rem iure fuga cum itaque distinctio beatae adipisci labore! Et vero laudantium nobis praesentium rerum temporibus soluta necessitatibus delectus repellendus excepturi?
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aut eaque quis, atque sint nam praesentium eum quasi corrupti voluptas est iusto quia excepturi ea accusamus, corporis iste velit dignissimos amet animi id. Consequuntur veniam beatae nisi sit assumenda similique ex aliquam saepe harum rem, aut expedita aliquid possimus autem magni eligendi cupiditate iusto, quos temporibus exercitationem inventore! Officiis, esse.
+        </div>
+    
+        <div> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, voluptatem tempora beatae doloribus at voluptatibus? Quas, nihil provident, ipsam eius in accusantium minus illo earum quam similique praesentium accusamus rem iure fuga cum itaque distinctio beatae adipisci labore! Et vero laudantium nobis praesentium rerum temporibus soluta necessitatibus delectus repellendus excepturi?
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aut eaque quis, atque sint nam praesentium eum quasi corrupti voluptas est iusto quia excepturi ea accusamus, corporis iste velit dignissimos amet animi id. Consequuntur veniam beatae nisi sit assumenda similique ex aliquam saepe harum rem, aut expedita aliquid possimus autem magni eligendi cupiditate iusto, quos temporibus exercitationem inventore! Officiis, esse.
+        </div>
+        
+    </div>
+</body>
+</html>
