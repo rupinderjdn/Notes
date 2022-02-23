@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <title>Bootstrap layouts</title>
+    <style>
+        .container{
+            background-color: orange;
+            height: 100vh;
+        }
+        .row{
+            background-color: brown;
+            height: 25%;
+        }
+        .col{
+            height: 100%;
+            width: auto;
+        }
+        .col-2{
+            background-color: tomato;
+        }
+        .col-1{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- "container" will be their with some margin but "container-fluid" will take up the whole space -->
+
+        <!-- let's create a table using bootstrap -->
+
+        <div class="row">
+            <div class="col col-1"></div>
+            <div class="col col-2"></div>
+            <div class="col col-1"></div>
+            <div class="col col-2"></div>
+            <!-- column width
+            We can use inbuild class for dividing our columns.
+        let's say we add 12 columns to our row then for dividing them we will use
+        col-lg-12 -> one columns will take the whole row
+        col-lg-6 -> equally divided two columns
+        col-lg-3 -> equally divided 4 columns
+
+        Screen codes
+        xs -> extra small
+        sb -> small
+        ms -> media screen
+        lg -> large screen
+        xl -> extra large
+
+        we can define different conditions for different screen sizes for the variables above
+        -->
+        </div>
+    </div>
+</body>
+</html>
